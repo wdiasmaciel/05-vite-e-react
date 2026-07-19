@@ -4,7 +4,7 @@ interface DescricaoProps {
 
 export default function Descricao(props: DescricaoProps) {
   return (
-    <p className="text-sm text-slate-600">
+    <p className="text-sm text-slate-600 mb-2">
       {props.texto}
     </p>
   )

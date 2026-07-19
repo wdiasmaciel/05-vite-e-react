@@ -3,7 +3,6 @@
 :root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  line-height: 1;
   font-weight: 400;
 }
 
@@ -12,6 +11,35 @@ body {
   min-height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
+/*
+OBS:
+Em CSS, :root é um seletor de pseudoclasse que representa 
+o elemento de nível mais alto de um documento. Em páginas 
+Web, esse elemento é sempre o <html>. Ele é amplamente 
+utilizado para declarar variáveis globais (propriedades 
+personalizadas) acessíveis por todo o código. Exemplo de uso:
+Variáveis declaradas no :root podem ser chamadas em qualquer 
+outra regra CSS usando a função var().
+
+:root {
+  --cor-primaria: #007bff;
+  --fonte-padrao: sans-serif;
 }
+
+body {
+  font-family: var(--fonte-padrao);
+}
+
+button {
+  background-color: var(--cor-primaria);
+}
+
+Embora :root selecione o mesmo elemento que html, na grande 
+maioria dos documentos, ele tem duas vantagens principais:
+1) Maior especificidade: a pseudoclasse :root tem prioridade 
+   ligeiramente maior que o simples seletor html.
+2) Reusabilidade fora do HTML: em formatos como SVG ou XML, o 
+   elemento raiz não é necessariamente <html>. O :root garante 
+   que o estilo ou variável vá funcionar independentemente de 
+   qual seja a raiz do documento.
+*/

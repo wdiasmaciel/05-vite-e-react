@@ -22,7 +22,7 @@ export default function Cartao(props: CartaoProps) {
         caminho={props.caminho_da_imagem}
         descricao={props.descricao_da_imagem}
       />
-      <div className="mt-2 flex flex-1 flex-col">
+      <div className="mt-1 flex flex-1 flex-col">
         <Titulo texto={props.texto_do_titulo} />
         <Descricao texto={props.texto_da_descricao} />
       </div>
