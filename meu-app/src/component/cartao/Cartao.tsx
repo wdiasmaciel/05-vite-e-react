@@ -14,7 +14,9 @@ interface CartaoProps {
 
 export default function Cartao(props: CartaoProps) {
   return (
-    <div className="flex h-80 w-60 flex-col rounded-lg border border-slate-300 bg-slate-50 p-3 shadow-sm">
+    <div className="flex h-80 w-60 flex-col rounded-lg 
+                    border border-slate-300 bg-slate-50 
+                    p-3 shadow-sm">
       <Imagem
         caminho={props.caminho_da_imagem}
         descricao={props.descricao_da_imagem}
