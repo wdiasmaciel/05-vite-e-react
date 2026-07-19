@@ -18,3 +18,19 @@ export default function Botao(props: BotaoProps) {
     </a>
   )
 }
+
+/*
+OBS:
+No Tailwind CSS, a classe:
+1) inline-flex: aplica a propriedade CSS "display: inline-flex". Isso 
+   transforma o elemento em um contêiner flexível que flui junto com o 
+   texto (comportando-se como um elemento inline), mas que permite 
+   alinhar e organizar seus elementos filhos usando as regras do Flexbox.
+   Ela é usada principalmente para alinhar pequenos grupos de elementos 
+   (como um ícone ao lado de um texto) na mesma linha, sem que o contêiner 
+   empurre os próximos elementos para a linha debaixo. Faz com que o 
+   elemento ocupe apenas a largura dos seus elementos filhos e fique na 
+   mesma linha que outros elementos ao seu redor. 
+
+
+*/
